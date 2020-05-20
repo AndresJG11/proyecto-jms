@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Logo from './Logo';
 
 import Lista from './Lista'
 

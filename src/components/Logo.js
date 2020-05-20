@@ -14,7 +14,7 @@ const Logo = () => {
             marginBottom: "20px"
         },
         media: {
-            height: "300px"
+            height: "200px"
         }
     }
 
@@ -23,11 +23,11 @@ const Logo = () => {
             <CardMedia
                 component="img"
                 className="media"
-                image={require("../statics/images/logo/astronauta.jpg")}
-                title="Contemplative Reptile" />
+                image={require("../statics/images/logo/logo.png")}
+                title="Buscas, pides y chao!" />
             <CardContent>
                 <Typography gutterBottom variant="h5" component="h2" align="center">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tristique lorem eu faucibus fermentum.
+                    Buscas, pides y chao!
                  </Typography>
             </CardContent>
         </Card>

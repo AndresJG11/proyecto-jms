@@ -6,11 +6,9 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Grid from '@material-ui/core/Grid';
 import CardHeader from '@material-ui/core/CardHeader';
 import Typography from '@material-ui/core/Typography';
-import Avatar from '@material-ui/core/Avatar';
 import CircularProgress from '@material-ui/core/CircularProgress';
 
 import Server from "../Server"
-import { Link } from 'react-router-dom';
 
 var server = new Server()
 
@@ -70,7 +68,7 @@ class Lista extends Component {
         let linkWhatsapp = ""
         if (isWhatsapp) {
             linkWhatsapp = "https://api.whatsapp.com/send?phone=57" + contacto + "&text=Hola!%20quisiera%20pedir%20un%20domicilio"
-            imageName = <a href={linkWhatsapp} target="_blank"> <img src={require('../statics/images/iconos/whatsappTrue.png')} style={this.classes.avatar} alt="Whatsapp"></img> </a>
+            imageName = <a href={linkWhatsapp} target="_blank" rel="noopener noreferrer">  <img src={require('../statics/images/iconos/whatsappTrue.png')} style={this.classes.avatar} alt="Whatsapp"></img> </a>
         } else {
             imageName = <img src={require('../statics/images/iconos/whatsappFalse.png')} style={this.classes.avatar} alt="Whatsapp"></img>
         }
@@ -137,7 +135,6 @@ class Lista extends Component {
             render = <Grid container style={this.classes.gridList}>
                 <Grid item xs={12}>
                     <Grid container justify="space-around" alignItems="center" spacing={1}>
-                        <Link to="/prueba">
                         {Object.keys(comerciantes).map((key) => (
                             <Grid key={comerciantes[key]["nombre"]} item xs={12} sm={12} md={4} lg={4} xl={3}>
                                 {this.getCarta(comerciantes[key]["logo"],
@@ -148,7 +145,6 @@ class Lista extends Component {
                                     )}
                             </Grid>
                         ))}
-                        </Link>
                     </Grid>
                 </Grid>
             </Grid>

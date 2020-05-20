@@ -1,16 +1,14 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import { Container, Box } from '@material-ui/core';
 import { Card, TextField } from '@material-ui/core';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import CardActionArea from '@material-ui/core/CardActionArea';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import CircularProgress from '@material-ui/core/CircularProgress';
 
 
 import Grid from '@material-ui/core/Grid';
-import CardHeader from '@material-ui/core/CardHeader';
 
 
 import { Link } from 'react-router-dom';
@@ -18,11 +16,9 @@ import { Link } from 'react-router-dom';
 
 import '../css/Home.css';
 
-import Categoria from './Categoria.js';
 
 import Server from "../Server"
 
-import Logo from './Logo';
 
 
 
